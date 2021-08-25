@@ -1,0 +1,10 @@
+checkpoints/*.pth
+dataset/cifar-10*
+dataset/MNIST
+logs/*.csv
+.DS_Store
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
