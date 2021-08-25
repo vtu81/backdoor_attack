@@ -4,13 +4,14 @@ from data import PoisonedDataset, load_init_data, create_backdoor_data_loader
 import os
 import numpy as np
 
-from models.badnet import BadNet # LiRPA failed...
-from models.mobilenet import MobileNetV2 # LiRPA failed...
-from models.resnet18 import ResNet18 # LiRPA failed...
-from models.vnncomp_resnet import resnet2b, resnet4b # LiRPA okay
-from models.resnext import ResNeXt_cifar # LiRPA failed...
-from models.resnet import model_resnet # LiRPA failed...
-from models.densenet import Densenet_cifar_32 # LiRPA failed...
+from models.vnncomp_resnet import resnet2b, resnet4b
+# The following models can also be trained with, but need to modify `backdoor_model_trainer()`
+# from models.badnet import BadNet
+# from models.mobilenet import MobileNetV2
+# from models.resnet18 import ResNet18
+# from models.resnext import ResNeXt_cifar
+# from models.resnet import model_resnet
+# from models.densenet import Densenet_cifar_32
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 device = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")

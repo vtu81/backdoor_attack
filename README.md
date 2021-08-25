@@ -115,21 +115,23 @@ You need to manually alter configurations inside the `train_resnet_cifar10.py` f
 
 ```
 .
+├── assets/        # images used in README.
 ├── checkpoints/   # save models.
 ├── data/          # store definitions and funtions to handle data.
 ├── dataset/       # save datasets.
 ├── logs/          # save run logs.
+├── marks/         # save trigger marks.
 ├── models/        # store definitions and functions of models
 ├── utils/         # general tools.
-├── assets/        # images used in README.
-├── LICENSE
-├── README.md
-├── main.py                   # train BadNet on MNIST
-├── deeplearning.py           # model training funtions
-├── train_resnet_cifar10.py   # train ResNet on CIFAR10
 ├── attack_demo_cifar10.ipynb # demo of backdoor attack on CIFAR10
 ├── attack_demo_mnist.ipynb   # demo of backdoor attack on MNIST
-└── requirements.txt
+├── data_downloader.py        # download dataset
+├── deeplearning.py           # model training funtions
+├── LICENSE
+├── main.py                   # train BadNet on MNIST
+├── README.md                 # this README
+├── requirements.txt
+└── train_resnet_cifar10.py   # train ResNet on CIFAR10
 ```
 
 ## License
